@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { Header } from '../../Components/index';
 // import { Container } from './styles';
 
 export default function HomePage() {
   return (
-    <>
-        <span>On Home Page</span>
-    </>
+    <div>
+        <Header></Header>
+    </div>
   );
 }
 

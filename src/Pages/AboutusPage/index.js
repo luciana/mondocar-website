@@ -1,4 +1,5 @@
 import React from 'react';
+import { Header } from '../../Components/index';
 
 // import { Container } from './styles';
 
@@ -6,7 +7,7 @@ export default function AboutUs() {
   
 return (
     <>
-        <span>On About Page</span>
+        <Header></Header>
     </>
 );
 }

@@ -1,0 +1,79 @@
+
+@media (max-width: 870px)
+{
+    .headerComp .navbar{
+       display: none;
+    }
+    .logo img{
+        width: 40% !important; 
+        margin-top: 0.5vh;
+    }
+    .collapseAll {
+        display: block !important; 
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.headerComp{
+    width: 100vw;
+    display: flex;
+    height: 10vh;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solidrgb(182, 179, 179);
+}
+
+.collapseMenu{
+    display: flex;
+    flex-direction: column;
+    border: solid 0.5px rgb(182, 179, 179);
+    background-color:  rgb(182, 179, 179);
+    text-align: end;
+}
+
+.collapseMenu a{
+    font-size: 1rem;
+    margin: 2vh 2vw;
+    text-decoration: none;
+}
+
+.headerComp .Hamb{
+    height: 10vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerComp .collapseAll {
+    display: none; 
+}
+
+.headerComp .logo{
+    margin: 0 4vw;
+}
+
+.headerComp .logo img{
+    margin-top: 2vh;
+    width: 60%; 
+}
+
+.headerComp .navbar{
+    margin: 1vh 6vw;
+}
+
+.headerComp .navbar a{
+    margin: 0 1vw;
+    text-decoration: none;
+    color: rgb(118, 118, 189);
+    font-size: 1.2rem;
+}
+.headerComp .navbar a:visited {
+    color: rgb(118, 118, 189);
+}
+.headerComp .navbar a:hover {
+    text-decoration: underline;
+}
