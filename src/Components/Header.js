@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Logo from '../assets/mondologo.jpg';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
+import $ from 'jquery';
 
 // import { Container } from './styles';
 
@@ -10,11 +11,11 @@ function Header() {
 
     const handleShowToggle = (div) => {
         if(ShowMenu === -1){
-            div.nativeEvent.path[1].style.backgroundColor = "rgb(182, 179, 179)";
+            $('.Hamb').css('background-color',"rgb(182, 179, 179)");
         }else{
-            div.nativeEvent.path[1].style.backgroundColor = "";
-
+            $('.Hamb').css('background-color',"");
         }
+        console.log($('.Hamb').css('background-color'))
         setShowMenu(-ShowMenu);
     }
   return(
