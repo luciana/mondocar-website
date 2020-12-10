@@ -32,7 +32,7 @@ function Header() {
             </Link>
           </div>
           <div className="collapseAll">
-          <div className="Hamb" style={{}} onClick={handleShowToggle}>
+          <div className="Hamb" style={{cursor: 'pointer'}} onClick={handleShowToggle}>
                 <i className="fas fa-bars fa-2x"/>
             </div>
 
