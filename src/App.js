@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import HomePage from './Pages/HomePage';
+import AboutUs from './Pages/AboutusPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Mondo Car Repair Website.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/AboutUs" exact component={AboutUs} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
