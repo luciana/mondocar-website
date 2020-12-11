@@ -3,9 +3,10 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './Pages/HomePage';
 import AboutUs from './Pages/AboutusPage';
+import './Pages/pages.css'
 
 function App() {
   return (
