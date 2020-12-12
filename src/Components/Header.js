@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/mondologo.jpg';
 import { Link } from 'react-router-dom';
-import { Button, Card } from 'react-bootstrap';
 import $ from 'jquery';
 
 // import { Container } from './styles';
