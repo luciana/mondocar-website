@@ -41,7 +41,7 @@ export default function HomePage() {
       </div>
       <div className="Row3">
         <div className="title">
-          <span color="white">How a get there?</span>
+          <span color="white">Come to see us!</span>
         </div>
         <div className="mapAdress">
           <div ref={ref} className="map">
