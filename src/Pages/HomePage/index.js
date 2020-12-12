@@ -36,7 +36,7 @@ export default function HomePage() {
       </div>
       <div className="Row2">
         <div className="title">
-          <span color="white">Who we are?</span>
+          <span color="white">Who are we?</span>
         </div>
       </div>
       <div className="Row3">
