@@ -28,7 +28,12 @@ export default function HomePage() {
               <div className="imageBlock d-block w-100"></div>
               <div className="carousel-caption">
                 <h1>Mondo Car</h1>
-                <p>At Mondo Car we are experts in foreign and domestic cars.</p>
+                <p>          
+                  At Mondo Car we are experts in foreign and domestic cars. 
+                  We are a complete auto service shop. 
+                  We are qualified to service your vehicle from an oil change to transmission repair. 
+                  Call us today! We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
+                </p>
               </div>
             </div>
           </div>
@@ -36,7 +41,14 @@ export default function HomePage() {
       </div>
       <div className="Row2">
         <div className="title">
-          <span color="white">Who are we?</span>
+          <span color="white">Make appointment!!</span>
+        </div>
+        <div className="content">
+            Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
+            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a>
+            <form action="">
+              <button type="submit">Schedule</button>
+            </form>
         </div>
       </div>
       <div className="Row3">
@@ -47,8 +59,8 @@ export default function HomePage() {
           <div ref={ref} className="map">
           </div>
           <a target="_blank" href="http://www.google.com/maps?f=q&hl=en&q=9713+Ravenna+Rd,+Twinsburg+Ohio+44087+USA&sll=37.0625,-95.677068&sspn=33.29802,59.238281&ie=UTF8&ll=41.309825,-81.431072&spn=0.007704,0.014462&z=16&iwloc=addr&om=1">
-            9713 Ravenna Rd. Twinsburg Ohio 44087
-            </a>
+            
+          </a>
         </div>
       </div>
     </div>
