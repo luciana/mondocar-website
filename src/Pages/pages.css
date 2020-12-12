@@ -2,16 +2,17 @@
 @media (max-width: 870px)
 {
     .imageBlock{
-        background-color: rgba(3, 3, 3, 0.5) !important;
-        background-blend-mode: multiply;
-        background-image: url("../assets/images/cars/IMG_2062.JPG") !important;
-        background-repeat: no-repeat;
-        background-size: cover;
         background-position-y: 0 !important;
-        height: 50vh;
+    }
+
+    .Row2 .map{
+        width: 70vw !important;
     }
 }
 
+.header{
+    max-width: 100%;
+}
 
 .imageBlock{
     background-color: rgba(3, 3, 3, 0.5) !important;
@@ -21,4 +22,41 @@
     background-size: cover;
     background-position-y: -20vh;
     height: 50vh;
+}
+
+.Row2{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Row2 .title{
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
+}
+
+.Row3{
+    background-color: #8fb7c8;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.Row3 .map{
+    width: 98.5vw;
+    height: 30vh;
+}
+
+.Row3 .mapAdress{
+    display: flex;
+    flex-direction: column;
+}
+
+.Row3 .title{
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
 }
