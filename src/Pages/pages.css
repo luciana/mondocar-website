@@ -6,7 +6,7 @@
     }
 
     .Row2{
-        height: 75vh !important;
+        max-height: 75vh !important;
     }
 
     .Row2 .content{
@@ -22,6 +22,29 @@
 
 @media (max-width: 870px)
 {
+    .AboutUstitle{
+        text-align: center;
+        margin-top: 2vh;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    .contentAboutUS .RowAbout1{
+        flex-direction: column !important;
+        font-size: 0.7rem;
+        margin: 2vh 10vw !important;
+    }
+    .contentAboutUS .RowAbout2{
+        flex-direction: column !important;
+        font-size: 0.7rem;
+        margin: 2vh 10vw!important;
+    }
+    .contentAboutUS .RowAbout3{
+        flex-direction: column !important;
+        font-size: 0.7rem;
+        margin: 2vh 10vw!important;
+    }
+
     .imageBlock{
         background-position-y: 0 !important;
         background-position-x: -30vw;
@@ -112,4 +135,62 @@
 .Row3 .title{
     font-size: 1.7rem;
     margin-bottom: 2vh;
+}
+
+.contentAboutUS{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+.contentAboutUS .RowAbout1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15vw;
+    font-weight: bolder;
+}
+
+.contentAboutUS .RowAbout1 img{
+    width: 60%;
+    margin: 0.5vh 0.5vw;
+    transform: rotate(-2deg);
+    border: 10px solid rgb(231, 230, 227);
+}
+
+.contentAboutUS .RowAbout2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 15vw;
+    font-weight: bolder;
+}
+.contentAboutUS .RowAbout2 img{
+    width: 60%;
+    margin: 0.5vh 0.5vw;
+    transform: rotate(-2deg);
+    border: 10px solid rgb(231, 230, 227);
+}
+
+.contentAboutUS .RowAbout3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15vw;
+    font-weight: bolder;
+}
+
+.contentAboutUS .RowAbout3 img{
+    width: 60%;
+    margin: 0.5vh 0.5vw;
+    transform: rotate(-1.5deg);
+    border: 10px solid rgb(231, 230, 227);
+}
+
+.AboutUstitle{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 3vh 5vw;
 }

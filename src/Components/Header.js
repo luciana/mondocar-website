@@ -27,7 +27,7 @@ function Header() {
                         <span>Home</span>
                     </Link>
                     <Link to='/AboutUs'>
-                        {/* <span>About Us</span> */}
+                        <span>About Us</span>
                     </Link>
                 </div>
                 <div className="collapseAll">
