@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Header } from '../../Components/index';
+import { Header, Footer} from '../../Components/index';
 import { useGoogleMaps } from "react-hook-google-maps";
 import { Card, Form ,Button } from 'react-bootstrap';
 import $ from 'jquery';
@@ -67,6 +67,7 @@ export default function HomePage() {
         <div className="content">
             Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
             Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>
+            Mon. - Fri.: 08.00am - 17.00pm
             <Card>
               <Form id="appointmentForm" onSubmit={SendEmail}>
                 <Form.Label>Name:</Form.Label>
@@ -101,6 +102,9 @@ export default function HomePage() {
             9713 Ravenna Rd. Twinsburg Ohio 44087
           </a>
         </div>
+      </div>
+      <div>
+        <Footer></Footer>
       </div>
     </div>
   );
