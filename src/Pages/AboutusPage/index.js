@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../../Components/index';
+import { Header, Footer } from '../../Components/index';
 import alpha from '../../assets/images/str_alpha.jpg';
 import espresso from '../../assets/images/str_espresso.jpg';
 import family from '../../assets/images/str_family.jpg';
@@ -54,6 +54,9 @@ export default function AboutUs() {
                         Thanks, Pino.
                     </span>
                 </div>
+            </div>
+            <div className="footer">
+                <Footer></Footer>
             </div>
         </div>
     );
