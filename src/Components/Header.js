@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/mondologo.jpg';
+import Logo from '../assets/mondologo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 

@@ -1,7 +1,7 @@
 @media (max-width: 375px)
 {
     .logo img{
-        width: 20% !important; 
+        width: 100% !important; 
         margin-top: 0.5vh;
     }
     .headerComp{
@@ -30,8 +30,11 @@
     .headerComp .navbar{
        display: none;
     }
+    .logo{
+        width: 100% !important; 
+    }
     .logo img{
-        width: 40% !important; 
+        width: 35% !important; 
         margin-top: 0.5vh;
     }
     .collapseAll {
@@ -52,6 +55,11 @@
     align-items: center;
     justify-content: space-between;
     border: 0.5px solid rgb(182, 179, 179);
+}
+
+.logo{
+    width: 15%; 
+    margin-top: 0.5vh;
 }
 
 .collapseMenu{
