@@ -14,7 +14,7 @@ export default function AboutUs() {
                 <Header></Header>
             </div>
             <div className="AboutUstitle">
-                <span>About Us</span>
+                <span style={{color: gray}}>About Us</span>
             </div>
             <div className="contentAboutUS">
                 <div className="RowAbout1">
