@@ -68,7 +68,7 @@ export default function HomePage() {
             Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
             Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>
             Mon. - Fri.: 08.00am - 17.00pm
-            <Card>
+            {/* <Card>
               <Form id="appointmentForm" onSubmit={SendEmail}>
                 <Form.Label>Name:</Form.Label>
                 <Form.Control 
@@ -88,7 +88,7 @@ export default function HomePage() {
                 ></Form.Control>
                 <Button type="submit">Schedule</Button>
               </Form>
-            </Card>
+            </Card> */}
         </div>
       </div>
       <div className="Row3">
