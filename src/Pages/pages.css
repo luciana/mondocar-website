@@ -14,9 +14,9 @@
         font-size: 0.8rem !important;
     }
 
-    .carousel-caption p{
+    /* .carousel-caption p{
         font-size: 0.8rem;
-    }
+    } */
 
 }
 
@@ -62,9 +62,9 @@
         font-size: 1rem !important;
     }
 
-    .carousel-caption p{
+    /* .carousel-caption p{
         font-size: 1rem;
-    }
+    } */
 }
 
 .header{
@@ -72,13 +72,13 @@
 }
 
 .imageBlock{
-    background-color: rgba(3, 3, 3, 0.5) !important;
+    /* background-color: rgba(3, 3, 3, 0.5) !important; */
     background-blend-mode: multiply;
-    background-image: url("../assets/images/background.jpg");
+    background-image: url("../assets/images/background-new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -20vh;
-    height: 69vh;
+    background-position-y: -10vh;
+    height: 59vh;
 }
 
 .Row2{

@@ -43,12 +43,11 @@ export default function HomePage() {
         <Header></Header>
       </div>
       <div className="Row1">
-        <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
+        <div id="" className="carousel slide" data-ride="carousel">
+          <div >
+            <div >
               <div className="imageBlock d-block w-100"></div>
-              <div className="carousel-caption">
-                <h1>Mondo Car</h1>
+              <div>
                 <p>          
                   At Mondo Car we are experts in foreign and domestic cars. 
                   We are a complete auto service shop. 
