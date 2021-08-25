@@ -62,12 +62,14 @@ export default function HomePage() {
       </div>
       <div className="Row2">
         <div className="title">
-          <span color="white">Make appointment!!</span>
+          <span color="white">Contact Us</span>
         </div>
         <div className="content">
             Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
-            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>
-            Mon. - Fri.: 08.00am - 17.00pm
+            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>           
+            Address: 9713 Ravenna Rd. Twinsburg Ohio 44087<br/>
+            Mon. - Fri: 08.00am - 5pm<br/>
+            Sat - Sun: Closed<br/>
             {/* <Card>
               <Form id="appointmentForm" onSubmit={SendEmail}>
                 <Form.Label>Name:</Form.Label>
