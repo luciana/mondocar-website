@@ -47,28 +47,20 @@ export default function HomePage() {
           <div >
             <div >
               <div className="imageBlock d-block w-100"></div>
-              <div className="container">
-                <p className="title">          
-                  At Mondo Car we are experts in foreign and domestic cars. 
-                  We are a complete auto service shop. 
-                  We are qualified to service your vehicle from an oil change to transmission repair. 
-                  Call us today! We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
       <div className="Row2">
-        <div className="title">
-          <span color="white">Contact Us</span>
-        </div>
+        
         <div className="content">
-            Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
-            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>           
-            Address: 9713 Ravenna Rd. Twinsburg Ohio 44087<br/>
-            Mon. - Fri: 08.00am - 5pm<br/>
-            Sat - Sun: Closed<br/>
+          <p>At Mondo Car we are experts in foreign and domestic cars. 
+                  We are a complete auto service shop. 
+                  We are qualified to service your vehicle from an oil change to transmission repair. 
+                  We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
+                  </p>
+                  <a href="tel:13304050555">Call us today! </a>
             {/* <Card>
               <Form id="appointmentForm" onSubmit={SendEmail}>
                 <Form.Label>Name:</Form.Label>
@@ -93,6 +85,16 @@ export default function HomePage() {
         </div>
       </div>
       <div className="Row3">
+      <div className="title">
+          <span color="">Contact Us</span>
+        </div>
+        <div className="content">
+            Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
+            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>           
+            Address: 9713 Ravenna Rd. Twinsburg Ohio 44087<br/>
+            Mon. - Fri: 08.00am - 5pm<br/>
+            Sat - Sun: Closed<br/>
+          </div>
         {/* <div className="title">
           <span color="white">Come to see us!</span>
         </div> */}

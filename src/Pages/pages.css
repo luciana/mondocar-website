@@ -82,7 +82,7 @@
 }
 
 .Row2{
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,12 +114,13 @@
 
 .Row3{
     background-color: #8fb7c8;
-    color: white;
-    height: 60vh;
+    /* color: white; */
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2vh 0;
+    font-size: 1.2rem;
 }
 
 .Row3 .map{
