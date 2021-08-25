@@ -10,16 +10,16 @@ export default function HomePage() {
   const [ Name, setName ] = useState("");
   const [ Email, setEmail ] = useState("");
   const [ Comments, setComments ] = useState("");
-  const { ref, map, google } = useGoogleMaps(
-    "AIzaSyC8ytbqfN7jHZE-yok4yfIaNUxE1qGJ2Mc",
-    {
-      center: { lat: 41.309825, lng: -81.431072 },
-      zoom: 16,
-    },
-  );
-  if (map) {
-    new google.maps.Marker({ position: { lat: 41.309825, lng: -81.431072 }, map });
-  }
+  // const { ref, map, google } = useGoogleMaps(
+  //   "AIzaSyC8ytbqfN7jHZE-yok4yfIaNUxE1qGJ2Mc",
+  //   {
+  //     center: { lat: 41.309825, lng: -81.431072 },
+  //     zoom: 16,
+  //   },
+  // );
+  // if (map) {
+  //   new google.maps.Marker({ position: { lat: 41.309825, lng: -81.431072 }, map });
+  // }
 
   const ResetForm = () => {
     setName("");
@@ -47,8 +47,8 @@ export default function HomePage() {
           <div >
             <div >
               <div className="imageBlock d-block w-100"></div>
-              <div>
-                <p>          
+              <div className="container">
+                <p className="title">          
                   At Mondo Car we are experts in foreign and domestic cars. 
                   We are a complete auto service shop. 
                   We are qualified to service your vehicle from an oil change to transmission repair. 
@@ -93,15 +93,15 @@ export default function HomePage() {
         </div>
       </div>
       <div className="Row3">
-        <div className="title">
+        {/* <div className="title">
           <span color="white">Come to see us!</span>
-        </div>
+        </div> */}
         <div className="mapAdress">
-          <div ref={ref} className="map">
-          </div>
-          <a style={{color:"white", textDecoration: "underline"}} target="_blank" href="http://www.google.com/maps?f=q&hl=en&q=9713+Ravenna+Rd,+Twinsburg+Ohio+44087+USA&sll=37.0625,-95.677068&sspn=33.29802,59.238281&ie=UTF8&ll=41.309825,-81.431072&spn=0.007704,0.014462&z=16&iwloc=addr&om=1">
+          {/* <div ref={ref} className="map">
+          </div> */}
+          {/* <a style={{color:"white", textDecoration: "underline"}} target="_blank" href="http://www.google.com/maps?f=q&hl=en&q=9713+Ravenna+Rd,+Twinsburg+Ohio+44087+USA&sll=37.0625,-95.677068&sspn=33.29802,59.238281&ie=UTF8&ll=41.309825,-81.431072&spn=0.007704,0.014462&z=16&iwloc=addr&om=1">
             9713 Ravenna Rd. Twinsburg Ohio 44087
-          </a>
+          </a> */}
         </div>
       </div>
       <div>

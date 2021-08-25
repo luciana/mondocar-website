@@ -6,7 +6,7 @@
     }
 
     .Row2{
-        max-height: 75vh !important;
+        max-height: 30vh !important;
     }
 
     .Row2 .content{
@@ -51,7 +51,7 @@
     }
 
     .Row2{
-        height: 75vh !important;
+        height: 35vh !important;
     }
     .Row2 .content{
         margin: 3vh 8vw !important;
@@ -82,7 +82,7 @@
 }
 
 .Row2{
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
