@@ -57,7 +57,7 @@ export default function HomePage() {
         <div className="content">
           <p>At Mondo Car we are experts in foreign and domestic cars. 
                   We are a complete auto service shop. 
-                  We are qualified to service your vehicle from an oil change to transmission repair. 
+                  We can service your vehicle from an oil change to major repairs. 
                   We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
                   </p>
                   <a href="tel:13304050555">Call us today! </a>
