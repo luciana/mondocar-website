@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 import { Header, Footer} from '../../Components/index';
 import { useGoogleMaps } from "react-hook-google-maps";
-import { Card, Form ,Button } from 'react-bootstrap';
-import $ from 'jquery';
+//import { Card, Form ,Button } from 'react-bootstrap';
+//import $ from 'jquery';
 
 
 
 export default function HomePage() {
-  const [ Name, setName ] = useState("");
-  const [ Email, setEmail ] = useState("");
-  const [ Comments, setComments ] = useState("");
+  // const [ Name, setName ] = useState("");
+  // const [ Email, setEmail ] = useState("");
+  // const [ Comments, setComments ] = useState("");
   // const { ref, map, google } = useGoogleMaps(
   //   "AIzaSyC8ytbqfN7jHZE-yok4yfIaNUxE1qGJ2Mc",
   //   {
@@ -21,20 +21,20 @@ export default function HomePage() {
   //   new google.maps.Marker({ position: { lat: 41.309825, lng: -81.431072 }, map });
   // }
 
-  const ResetForm = () => {
-    setName("");
-    setEmail("");
-    setComments("");
-  }
+  // const ResetForm = () => {
+  //   setName("");
+  //   setEmail("");
+  //   setComments("");
+  // }
 
-  const SendEmail = (event) => {
-    event.preventDefault();
-    console.log(Name);
-    console.log(Email);
-    console.log(Comments);
-    alert("Thanks for make a appointment with us");
-    ResetForm();
-  }
+  // const SendEmail = (event) => {
+  //   event.preventDefault();
+  //   console.log(Name);
+  //   console.log(Email);
+  //   console.log(Comments);
+  //   alert("Thanks for make a appointment with us");
+  //   ResetForm();
+  // }
 
 
   return (
@@ -61,27 +61,7 @@ export default function HomePage() {
                   We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
                   </p>
                   <a href="tel:13304050555">Call us today! </a>
-            {/* <Card>
-              <Form id="appointmentForm" onSubmit={SendEmail}>
-                <Form.Label>Name:</Form.Label>
-                <Form.Control 
-                  value={Name}
-                  onChange={event => setName(event.target.value)}
-                ></Form.Control>
-                <Form.Label>email:</Form.Label>
-                <Form.Control
-                  type="email"
-                  value={Email}
-                  onChange={event => setEmail(event.target.value)}
-                ></Form.Control>
-                <Form.Label>Comments:</Form.Label>
-                <Form.Control as="textarea"
-                  value={Comments}
-                  onChange={event => setComments(event.target.value)}
-                ></Form.Control>
-                <Button type="submit">Schedule</Button>
-              </Form>
-            </Card> */}
+        
         </div>
       </div>
       <div className="Row3">
