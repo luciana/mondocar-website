@@ -26,13 +26,13 @@ function Header() {
                 <div className="navbar text-uppercase ms-auto py-4 py-lg-0">
                     <Link to="/">
                         <span>Home</span>
-                    </Link>
+                    </Link>                                   
+                     <a className="nav-link" href="#location">
+                         <span>Location</span>
+                    </a>
                     <Link to='/AboutUs'>
                         <span>About Us</span>
-                    </Link>                  
-                     <a className="nav-link" href="#services">
-                         <span>Services</span>
-                      </a>
+                    </Link> 
                    
                         
                 </div>

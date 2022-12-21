@@ -1,31 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import { Header, Footer} from '../../Components/index';
-import { useGoogleMaps } from "react-hook-google-maps";
+import Map from '../../Components/Map';
+import Reviews from '../../Components/Reviews';
 import LogoWorld from '../../assets/mondologo-world.png';
-//import { Card, Form ,Button } from 'react-bootstrap';
-//import $ from 'jquery';
-
-
 
 export default function HomePage() {
-  // const [ Name, setName ] = useState("");
-  // const [ Email, setEmail ] = useState("");
-  // const [ Comments, setComments ] = useState("");
 
-  const uluru = { lat: 41.309825, lng: -81.431072};
-  const { ref, map, google } = useGoogleMaps(
-    "AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo",
-    {
-      center: { lat: 41.309825, lng: -81.431072 },
-      zoom: 16,
-    },
-  );
-
-  if (map) {
-    // execute when map object is ready
-    new google.maps.Marker({ position: uluru, map });
-  }
-
+  const location = { 
+    lat: 41.309825, 
+    lng: -81.431072,
+    address: '9347 Ravenna Road, Twinsburgh, Ohio 44087',
+  };
 
   return (
     <div>      
@@ -40,17 +25,29 @@ export default function HomePage() {
                 <div><span> or dial +1 (330) 405-0555</span></div>
             </div>
         </header>     
-        <div className="container page-section" >
-            <span className=" section-subheading text-muted">At Mondo Car we are experts in foreign and domestic cars. 
+        <div className="container page-section" id="location">
+            <div className=" section-subheading text-muted">At Mondo Car we are experts in foreign and domestic cars. 
                   We are a complete auto service shop. 
                   We can service your vehicle from an oil change to major repairs. 
                   We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
-                  </span>
+                  Come and visit us at {location.address}
+            </div>
         </div>
-        <div className="container page-section" id="services">       
-                 <div ref={ref} style={{ width: 500, height: 300 }} />            
+        <div className="" >       
+            <Map location={location} zoomLevel={17} />          
         </div>
-        <section>
+        <div className="page-section bg-light" id="appointment">
+            <div className="container">
+                <div className="text-center">
+                    <h2 className="section-heading text-uppercase">Make an appointment</h2>
+                    <h3 className="section-subheading text-muted">@ your friendly neighbohood shop</h3>
+                </div>
+                <div className="row">                 
+                 <Reviews /> 
+                </div>
+            </div>
+        </div>
+        <div>
           <div className="container page-section">
             Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
             Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>           
@@ -58,7 +55,7 @@ export default function HomePage() {
             Mon. - Fri  8am - 5pm<br/>            
             Sat - Sun: Closed<br/>    
             </div>
-        </section>
+        </div>
       <div>
         <Footer></Footer>
       </div>

@@ -1,3 +1,8 @@
+.headerComp .logo img {
+  margin-top: 0vh;
+  width: 30%;
+}
+
 @media (max-width: 375px) {
   .logo img {
     width: 100% !important;
@@ -26,6 +31,10 @@
 @media (max-width: 870px) {
   .headerComp .navbar {
     display: none;
+  }
+  .headerComp .logo img {
+    margin-top: 0vh;
+    width: 53%;
   }
   .logo {
     width: 100% !important;
@@ -118,10 +127,7 @@
   margin: 0 4vw;
 }
 
-.headerComp .logo img {
-  margin-top: 0vh;
-  width: 30%;
-}
+
 
 .headerComp .navbar {
   margin: 1vh 6vw;
@@ -149,4 +155,10 @@
   padding-left: 5vw;
   justify-content: center;
   color: wheat;
+}
+
+.google-reviews-tagembeded {
+  width:100%;
+  height:100%;
+  overflow: auto;
 }
