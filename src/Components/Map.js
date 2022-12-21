@@ -16,10 +16,13 @@ function Map({ location, zoomLevel }) {
   }
 
 return (
+  <div>    
   <div className="map">
     <div className="google-map">
       <div ref={ref} className="map-render" />  
     </div>
+  </div>
+
   </div>
 );
 }

@@ -33,27 +33,36 @@ export default function HomePage() {
                   Come and visit us at {location.address}
             </div>
         </div>
-        <div className="" >       
-            <Map location={location} zoomLevel={17} />          
+        <div>
+        <div className="page-section  container">
+          <div className="text-center">
+            <h2 className="section-heading text-uppercase">Visit us </h2>
+            <h3 className=" text-muted">{location.address}</h3>
+          </div>
+          </div>
+          <Map location={location} zoomLevel={17} />          
         </div>
         <div className="page-section bg-light" id="appointment">
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Make an appointment</h2>
-                    <h3 className="section-subheading text-muted">@ your friendly neighbohood shop</h3>
+                    <h3 className="section-subheading text-muted">@ your friendly neighbohood car shop</h3>
                 </div>
-                <div className="row">                 
-                 <Reviews /> 
+                <div className="row">                   
+                  <div  >
+                  <iframe className ="schedule-iframe" src="https://mondocar-smallbusinesssoletrader.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframemondocar-smallbusinesssoletrader" frameborder="0" allowtransparency="true"></iframe>
+                  </div>
+                  <Reviews />  
                 </div>
             </div>
         </div>
         <div>
-          <div className="container page-section">
-            Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> <br/>
-            Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a><br/>           
-            Address: 9713 Ravenna Rd. Twinsburg Ohio 44087<br/>
-            Mon. - Fri  8am - 5pm<br/>            
-            Sat - Sun: Closed<br/>    
+          <div className="  footerBase">
+            <span> Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> </span>
+            <span>Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a>          </span>
+            <span>Address: 9713 Ravenna Rd. Twinsburg Ohio 44087</span>
+            <span>Mon. - Fri  8am - 5pm</span>
+            <span>Sat - Sun: Closed</span>
             </div>
         </div>
       <div>

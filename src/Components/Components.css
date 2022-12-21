@@ -157,6 +157,10 @@
   color: wheat;
 }
 
+.info-background{
+  background-color: #383838;
+}
+
 .google-reviews-tagembeded {
   width:100%;
   height:100%;

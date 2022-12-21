@@ -19,8 +19,8 @@ const Reviews = () => {
       
     return (
         <div>
-            <div class="tagembed-container google-reviews-tagembeded" >
-                <div class="tagembed-socialwall" data-wall-id="80077" view-url="https://widget.tagembed.com/80077">  </div>               
+            <div className="tagembed-container google-reviews-tagembeded" >
+                <div className="tagembed-socialwall" data-wall-id="80077" view-url="https://widget.tagembed.com/80077">  </div>               
             </div>
         </div>
     )
