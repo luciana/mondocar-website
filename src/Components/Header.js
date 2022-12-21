@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Logo from '../assets/mondologo-world.png';
+//import LogoWorld from '../assets/mondologo-world.png';
+import Logo from '../assets/mondologooneliner.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -17,18 +18,23 @@ function Header() {
         setShowMenu(-ShowMenu);
     }
     return (
-        <>
+        <div>
             <div className="headerComp">
                 <div className="logo">
-                    <img src={Logo} alt="logo" />
+                    <img src={Logo} alt="Mondo Car Repair Logo" />
                 </div>
-                <div className="navbar">
+                <div className="navbar text-uppercase ms-auto py-4 py-lg-0">
                     <Link to="/">
                         <span>Home</span>
                     </Link>
                     <Link to='/AboutUs'>
                         <span>About Us</span>
-                    </Link>
+                    </Link>                  
+                     <a className="nav-link" href="#services">
+                         <span>Services</span>
+                      </a>
+                   
+                        
                 </div>
                 <div className="collapseAll">
                     <div className="Hamb" onTouchStart={handleShowToggle} style={{ cursor: 'pointer' }}>
@@ -49,7 +55,7 @@ function Header() {
                     </div>
                 )}
             </div>
-        </>
+        </div>
     );
 }
 
