@@ -28,10 +28,9 @@ export default function HomePage() {
             </div>
         </header>     
         <div className="container page-section" id="location">
-            <div className=" section-subheading text-muted">At Mondo Car we are experts in foreign and domestic cars. 
-                  We are a complete auto service shop. 
-                  We can service your vehicle from an oil change to major repairs. 
-                  We specialize in repairing European and Japanese automobiles in the Northern Ohio area.
+            <div className=" section-subheading text-muted">At Mondo Car we are a complete auto service shop. 
+                  We service your vehicle from an oil change to major repairs. 
+                  We specialize in repairing European, Japanese and Domestic automobiles.
                   Come and visit us at {location.address}
             </div>
         </div>
