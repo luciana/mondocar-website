@@ -23,9 +23,8 @@ export default function HomePage() {
               <img className="logoWorld" src={LogoWorld} alt="Mondo Car Repair Logo" />    
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
                 <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555">Call us Today</a>
-                <a className="btn btn-success btn-xl text-uppercase" href="#contact">Schedule Service</a>
-               
-                <div><span> dial +1 (330) 405-0555</span></div>
+                <a className="btn btn-success btn-xl text-uppercase" href="#contact">Schedule Service</a>               
+                <div><span> or dial +1 (330) 405-0555</span></div>
             </div>
         </header>     
         <div className="container page-section" id="location">
