@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import LogoWorld from '../assets/mondologo-world.png';
-import Logo from '../assets/mondologooneliner.png';
+import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -9,6 +9,8 @@ import $ from 'jquery';
 function Header() {
     const [ShowMenu, setShowMenu] = useState(-1);
 
+
+    
     const handleShowToggle = (div) => {
         if (ShowMenu === -1) {
             $('.Hamb').css('background-color', "rgb(182, 179, 179)");
@@ -19,39 +21,55 @@ function Header() {
     }
     return (
         <div>
-            <div className="headerComp">
-                <div className="logo">
-                    <img src={Logo} alt="Mondo Car Repair Logo" />
-                </div>
-                <div className="navbar text-uppercase ms-auto py-4 py-lg-0">
-                    <Link to="/">
-                        <span>Home</span>
-                    </Link>                                   
-                     <a className="nav-link" href="#location">
-                         <span>Location</span>
-                    </a>
-                    <Link to='/AboutUs'>
-                        <span>About Us</span>
-                    </Link> 
-                   
-                        
-                </div>
-                <div className="collapseAll">
-                    <div className="Hamb" onTouchStart={handleShowToggle} style={{ cursor: 'pointer' }}>
+            <nav className="navbar navbar-expand-lg bg-light">
+                <div className="container-fluid ">                                       
+                    <img className="logo" src={Logo} alt="Mondo Car Repair Logo" />                    
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul className="navbar-nav ">
+                            <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li className="nav-item">
+                            <a className="nav-link" href="#location">Location</a>
+                            </li>
+                            <li className="nav-item">
+                            <a className="nav-link" href="#contact">Schedule Service</a>
+                            </li>
+                            <li className="nav-item">                           
+                                <Link className="nav-link" to='/AboutUs'>
+                                    <span>About Us</span>
+                                </Link> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="collapseAll">
+                    <div className="Hamb" onTouchStart={handleShowToggle} onClick={handleShowToggle} style={{ cursor: 'pointer' }}>
                         <i className="fas fa-bars fa-2x" />
                     </div>
 
                 </div>
-            </div>
+                </div>
+            </nav>
+
+           
             <div className="collapseAll">
                 {ShowMenu === 1 && (
                     <div className="collapseMenu">
                         <Link to="/">
-                            <span variant="secondary">Home</span>
-                        </Link>
+                        <span>Home</span>
+                        </Link>                                   
+                        <a className="nav-link" href="#location">
+                            <span>Location</span>
+                        </a>
+                        <a className="nav-link" href="#contact">
+                            <span>Schedule Service</span>
+                        </a>
                         <Link to='/AboutUs'>
-                            <span variant="secondary">About Us</span>
-                        </Link>
+                            <span>About Us</span>
+                        </Link> 
                     </div>
                 )}
             </div>

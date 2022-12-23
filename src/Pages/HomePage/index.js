@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Header, Footer} from '../../Components/index';
 import Map from '../../Components/Map';
 import Reviews from '../../Components/Reviews';
+import Schedule from '../../Components/Schedule';
 import LogoWorld from '../../assets/mondologo-world.png';
 
 export default function HomePage() {
@@ -21,8 +22,10 @@ export default function HomePage() {
             <div className="container">               
               <img className="logoWorld" src={LogoWorld} alt="Mondo Car Repair Logo" />    
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a className="btn btn-primary btn-xl text-uppercase" href="tel:13304050555">Call us Today!</a>
-                <div><span> or dial +1 (330) 405-0555</span></div>
+                <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555">Call us Today</a>
+                <a className="btn btn-success btn-xl text-uppercase" href="#contact">Schedule Service</a>
+               
+                <div><span> dial +1 (330) 405-0555</span></div>
             </div>
         </header>     
         <div className="container page-section" id="location">
@@ -42,16 +45,16 @@ export default function HomePage() {
           </div>
           <Map location={location} zoomLevel={17} />          
         </div>
-        <div className="page-section bg-light" id="appointment">
+        <Schedule /> 
+        <div className="page-section bg-light" id="testimonial">
             <div className="container">
-                <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Make an appointment</h2>
-                    <h3 className="section-subheading text-muted">@ your friendly neighbohood car shop</h3>
+                <div className="text-center">                    
+                    <h2 className="section-subheading text-muted">Our customers are satisfied</h2>
                 </div>
                 <div className="row">                   
-                  <div  >
+                  {/* <div  >
                   <iframe className ="schedule-iframe" src="https://mondocar-smallbusinesssoletrader.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframemondocar-smallbusinesssoletrader" frameborder="0" allowtransparency="true"></iframe>
-                  </div>
+                  </div> */}
                   <Reviews />  
                 </div>
             </div>
