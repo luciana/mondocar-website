@@ -37,9 +37,8 @@ export default function AboutUs() {
                                 After we moved to the United States, we opened the business in Twinsburg, Ohio. I have been part of Mondo Car with my father since then.
                                 At Mondo Car, I can say that we are Italian car enthusiasts, not only because we are from Italy, 
                                 but also because the country is the home of a great automobile industry. 
-                                Automobile companies such as Ferrari, Maserati, Di Tomaso, Lamborghini, Alfa Romeo, FIAT, Bugatti, and many others were born in Italy. 
-                                With style and advanced techniques, these Italian companies have fathered many world-class automobile machines. 
-                                At Mondo car, we specialize in these cars as well as other European and Japanese brand names.
+                                Automobile companies such as Ferrari, Maserati, Di Tomaso, Lamborghini, Alfa Romeo, FIAT, Bugatti, and many others that were born in Italy. 
+                                With style and advanced techniques, these Italian companies have fathered many world-class automobile machines.                               
                             </span>
                         </div>
                         <div className="RowAbout3 page-section">
