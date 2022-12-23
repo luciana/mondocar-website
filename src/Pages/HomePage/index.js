@@ -10,7 +10,7 @@ export default function HomePage() {
   const location = { 
     lat: 41.309825, 
     lng: -81.431072,
-    address: '9347 Ravenna Road, Twinsburgh, Ohio 44087',
+    address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
 
   return (
@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="  footerBase">
             <span> Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> </span>
             <span>Send us a email: <a href="mailto:autoservice@mondocaronline.com">autoservice@mondocaronline.com</a>          </span>
-            <span>Address: 9713 Ravenna Rd. Twinsburg Ohio 44087</span>
+            <span>Address: {location.address}</span>
             <span>Mon. - Fri  8am - 5pm</span>
             <span>Sat - Sun: Closed</span>
             </div>
