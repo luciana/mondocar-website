@@ -3,11 +3,11 @@ import { useGoogleMaps } from "react-hook-google-maps";
 import './map.css'
 
 function Map({ location, zoomLevel }) {
-  const k = 'AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo';//process.env.REACT_APP_GOOGLE_MAP_API_KEY;
-
+  //const k = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
+  console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY);
 
   const { ref, map, google } = useGoogleMaps(
-    k,
+    'AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo',
     {
       center: { lat: location.lat, lng: location.lng },
       zoom: zoomLevel,
