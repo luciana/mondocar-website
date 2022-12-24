@@ -9,8 +9,8 @@ import AnalyticsEventTracker from '../../Components/AnalyticsEventTracker';
 export default function HomePage() {
 
   const location = { 
-    lat: 41.309825, 
-    lng: -81.431072,
+    lat: 41.334545, 
+    lng: -81.478026,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
   const gaEventTracker = AnalyticsEventTracker('Home Page');
