@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
+import AnalyticsEventTracker from './AnalyticsEventTracker';
 
 
 function Schedule({props}) {   
     const [result, setResult] = useState(false);    
     const[error, setError] = useState(false);
     const[success, setSuccess] = useState(false);
+    const gaEventTracker = AnalyticsEventTracker('Schedule Service Form');
     
     const onSubmit = async (event) => {
         console.log('onSubmit triggered');
@@ -104,7 +106,7 @@ function Schedule({props}) {
                     </div>                   
                                      
                     <div className="text-center">
-                        <button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">                      
+                        <button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" onClick={()=>gaEventTracker('schedule_service_submit_button')}>                      
                             <span className={ result ? "spinner-border spinner-border-sm" : "d-none"} role="status" aria-hidden="true"></span>  Send Message 
                         </button>                                               
                     </div>

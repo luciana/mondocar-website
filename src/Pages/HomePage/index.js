@@ -4,6 +4,7 @@ import Map from '../../Components/Map';
 import Reviews from '../../Components/Reviews';
 import Schedule from '../../Components/Schedule';
 import LogoWorld from '../../assets/mondologo-world.png';
+import AnalyticsEventTracker from '../../Components/AnalyticsEventTracker';
 
 export default function HomePage() {
 
@@ -12,6 +13,7 @@ export default function HomePage() {
     lng: -81.431072,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
+  const gaEventTracker = AnalyticsEventTracker('Home Page');
 
   return (
     <div>      
@@ -22,8 +24,8 @@ export default function HomePage() {
             <div className="container">               
               <img className="logoWorld" src={LogoWorld} alt="Mondo Car Repair Logo" />    
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555">Call us Today</a>
-                <a className="btn btn-success btn-xl text-uppercase" href="#contact">Schedule Service</a>               
+                <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555" onClick={()=>gaEventTracker('call')}>Call us Today</a>
+                <a className="btn btn-success btn-xl text-uppercase" onClick={()=>gaEventTracker('schedule_service_link')} href="#contact">Schedule Service</a>               
                 <div><span> or dial +1 (330) 405-0555</span></div>
             </div>
         </header>     

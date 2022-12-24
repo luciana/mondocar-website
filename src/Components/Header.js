@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-//import LogoWorld from '../assets/mondologo-world.png';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import AnalyticsEventTracker from './AnalyticsEventTracker';
 
 // import { Container } from './styles';
 
 function Header() {
     const [ShowMenu, setShowMenu] = useState(-1);
-
-
-    
+    const gaEventTracker = AnalyticsEventTracker('Header Links');
     const handleShowToggle = (div) => {
         if (ShowMenu === -1) {
             $('.Hamb').css('background-color', "rgb(182, 179, 179)");
@@ -30,16 +28,16 @@ function Header() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#location">Location</a>
+                                <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="#location">Location</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#contact">Schedule Service</a>
+                                <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="#contact">Schedule Service</a>
                             </li>
                             <li className="nav-item">                           
-                                <Link className="nav-link" to='/AboutUs'>
+                                <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
                                     <span>About Us</span>
                                 </Link> 
                             </li>
@@ -58,18 +56,12 @@ function Header() {
             <div className="collapseAll">
                 {ShowMenu === 1 && (
                     <div className="collapseMenu">
-                        <Link to="/">
-                        <span>Home</span>
-                        </Link>                                   
-                        <a className="nav-link" href="#location">
-                            <span>Location</span>
-                        </a>
-                        <a className="nav-link" href="#contact">
-                            <span>Schedule Service</span>
-                        </a>
-                        <Link to='/AboutUs'>
-                            <span>About Us</span>
-                        </Link> 
+                          <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>                                 
+                          <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="#location">Location</a>
+                          <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="#contact">Schedule Service</a>
+                          <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
+                                    <span>About Us</span>
+                           </Link> 
                     </div>
                 )}
             </div>
