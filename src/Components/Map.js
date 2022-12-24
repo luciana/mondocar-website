@@ -3,7 +3,7 @@ import { useGoogleMaps } from "react-hook-google-maps";
 import './map.css'
 
 function Map({ location, zoomLevel }) {
-  const k = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
+  const k = 'AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo';//process.env.REACT_APP_GOOGLE_MAP_API_KEY;
 
 
   const { ref, map, google } = useGoogleMaps(
