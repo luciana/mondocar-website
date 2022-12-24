@@ -5,6 +5,8 @@ import Reviews from '../../Components/Reviews';
 import Schedule from '../../Components/Schedule';
 import LogoWorld from '../../assets/mondologo-world.png';
 import AnalyticsEventTracker from '../../Components/AnalyticsEventTracker';
+import ReactGA from 'react-ga';
+
 
 export default function HomePage() {
 
@@ -13,6 +15,9 @@ export default function HomePage() {
     lng: -81.478026,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
+  const TRACKING_ID = "'UA-3850337-1";
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
   const gaEventTracker = AnalyticsEventTracker('Home Page');
 
   return (

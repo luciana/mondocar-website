@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactGA from 'react-ga';
 import { Header, Footer } from '../../Components/index';
 import alpha from '../../assets/images/str_alpha.jpg';
 import espresso from '../../assets/images/str_espresso.jpg';
 import family from '../../assets/images/str_family.jpg';
-
-const TRACKING_ID = "'UA-3850337-1";
-ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function AboutUs() {
 
