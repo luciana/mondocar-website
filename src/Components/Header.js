@@ -3,9 +3,6 @@ import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import AnalyticsEventTracker from './AnalyticsEventTracker';
-
-// import { Container } from './styles';
-
 function Header() {
     const [ShowMenu, setShowMenu] = useState(-1);
     const gaEventTracker = AnalyticsEventTracker('Header Links');

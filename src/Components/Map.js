@@ -7,7 +7,7 @@ function Map({ location, zoomLevel }) {
   console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY);
 
   const { ref, map, google } = useGoogleMaps(
-    'AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo',
+    k,
     {
       center: { lat: location.lat, lng: location.lng },
       zoom: zoomLevel,
