@@ -5,6 +5,7 @@ import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 const MapContainer = (item) => {
 
 const k = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
+console.log("REACT_APP_GOOGLE_MAP_API_KEY", k);
  const mapStyles = {        
     height: "60vh",
     width: "100%"};
