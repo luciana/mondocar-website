@@ -12,8 +12,8 @@ export default function HomePage() {
 
   const location = { 
     name: "Mondo Car Repair, LLC",
-    lat: 41.334545, 
-    lng: -81.478026,
+    lat: 41.3130179, 
+    lng: -81.4379945,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
   const TRACKING_ID = "'UA-3850337-1";
