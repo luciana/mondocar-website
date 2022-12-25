@@ -11,6 +11,7 @@ import ReactGA from 'react-ga';
 export default function HomePage() {
 
   const location = { 
+    name: "Mondo Car Repair, LLC",
     lat: 41.334545, 
     lng: -81.478026,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
@@ -48,7 +49,7 @@ export default function HomePage() {
             <h3 className=" text-muted">{location.address}</h3>
           </div>
           </div>
-          <Map location={location} zoomLevel={17} />          
+          <Map location={location} />
         </div>
         <Schedule /> 
         <div className="page-section bg-light" id="testimonial">
@@ -56,10 +57,7 @@ export default function HomePage() {
                 <div className="text-center">                    
                     <h2 className="section-subheading text-muted">Our customers are satisfied</h2>
                 </div>
-                <div className="row">                   
-                  {/* <div  >
-                  <iframe className ="schedule-iframe" src="https://mondocar-smallbusinesssoletrader.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframemondocar-smallbusinesssoletrader" frameborder="0" allowtransparency="true"></iframe>
-                  </div> */}
+                <div className="row">                                    
                   <Reviews />  
                 </div>
             </div>

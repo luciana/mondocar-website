@@ -1,32 +1,30 @@
 import React from 'react';
-import { useGoogleMaps } from "react-hook-google-maps";
-import './map.css'
+import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 
-function Map({ location, zoomLevel }) {
-  //const k = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
-  console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY);
 
-  const { ref, map, google } = useGoogleMaps(
-    k,
-    {
-      center: { lat: location.lat, lng: location.lng },
-      zoom: zoomLevel,
-    },
-  );
+const MapContainer = (item) => {
 
-  if (map) {    
-    new google.maps.Marker({ position: location, map });
+ const mapStyles = {        
+    height: "60vh",
+    width: "100%"};
+  const center = {
+    lat: item.location.lat, 
+    lng: item.location.lng     
   }
-
-return (
-  <div>    
-  <div className="map">
-    <div className="google-map">
-      <div ref={ref} className="map-render" />  
-    </div>
-  </div>
-
-  </div>
-);
+  return (
+    <div>
+     <LoadScript
+       googleMapsApiKey='AIzaSyBxqaSWIPZTi2ocSMUDOG_Izhd8iwy_Bbo'>
+        <GoogleMap
+          mapContainerStyle={mapStyles}
+          zoom={17}
+          center={center}>
+          {
+            <MarkerF key={item.location.name} position={center}  />
+          }
+        </GoogleMap>
+     </LoadScript>
+     </div>
+  )
 }
-export default Map;
+export default MapContainer;
