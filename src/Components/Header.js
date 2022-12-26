@@ -28,10 +28,10 @@ function Header() {
                                 <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="#location">Location</a>
+                                <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="/#location">Location</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="#contact">Schedule Service</a>
+                                <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="/#contact">Schedule Service</a>
                             </li>
                             <li className="nav-item">                           
                                 <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
@@ -54,8 +54,8 @@ function Header() {
                 {ShowMenu === 1 && (
                     <div className="collapseMenu">
                           <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>                                 
-                          <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="#location">Location</a>
-                          <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="#contact">Schedule Service</a>
+                          <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="/#location">Location</a>
+                          <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="/#contact">Schedule Service</a>
                           <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
                                     <span>About Us</span>
                            </Link> 
