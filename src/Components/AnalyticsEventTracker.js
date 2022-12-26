@@ -1,9 +1,17 @@
-import ReactGA from "react-ga";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-const AnalyticsEventTracker = (category="Mondo Car Home Page category") => {
-  const eventTracker = (action = "test action", label = "test label") => {
-    ReactGA.event({category, action, label});
-  }
-  return eventTracker;
-}
-export default AnalyticsEventTracker;
+export const AnalyticsEventTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag("event", "page_view", {
+      page_path: location.pathname + location.search + location.hash,
+      page_search: location.search,
+      page_hash: location.hash,
+    });
+  }, [location]);
+
+
+  
+};

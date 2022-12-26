@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header, Footer} from '../../Components/index';
 import Map from '../../Components/Map';
 import Reviews from '../../Components/Reviews';
 import Schedule from '../../Components/Schedule';
 import LogoWorld from '../../assets/mondologo-world.png';
-import AnalyticsEventTracker from '../../Components/AnalyticsEventTracker';
-import ReactGA from 'react-ga';
+import { useLocation } from "react-router-dom";
+//import AnalyticsEventTracker from '../../Components/AnalyticsEventTracker';
 
 
 export default function HomePage() {
@@ -16,10 +16,23 @@ export default function HomePage() {
     lng: -81.4379945,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
-  const TRACKING_ID = "G-06KGKFJZ50";
-  ReactGA.initialize(TRACKING_ID);
-  ReactGA.pageview(window.location.pathname + window.location.search);
-  const gaEventTracker = AnalyticsEventTracker('Home Page');
+  const galocation = useLocation();
+  useEffect(() => {
+    window.gtag("event", "page_view", {
+      page_path: galocation.pathname + galocation.search + galocation.hash,
+      page_search: galocation.search,
+      page_hash: galocation.hash,
+    });
+  }, [galocation]);
+
+
+  const ga_onClick = (event, category, label) => {
+    window.gtag("event", event, {
+      event_category: category,
+      event_label: label
+    });
+  }
+  
 
   return (
     <div>      
@@ -30,8 +43,8 @@ export default function HomePage() {
             <div className="container">               
               <img className="logoWorld" src={LogoWorld} alt="Mondo Car Repair Logo" />    
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555" onClick={()=>gaEventTracker('call')}>Call us Today</a>
-                <a className="btn btn-success btn-xl text-uppercase" onClick={()=>gaEventTracker('schedule_service_link')} href="#contact">Schedule Service</a>               
+                <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555" onClick ={ga_onClick("call", "button", "call_button")}>Call us Today</a>
+                <a className="btn btn-success btn-xl text-uppercase" href="#contact" onClick ={ga_onClick("schedule", "button", "schedule_button")}>Schedule Service</a>               
                 <div><span> or dial +1 (330) 405-0555</span></div>
             </div>
         </header>     

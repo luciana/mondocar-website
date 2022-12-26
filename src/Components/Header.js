@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import AnalyticsEventTracker from './AnalyticsEventTracker';
 function Header() {
-    const [ShowMenu, setShowMenu] = useState(-1);
-    const gaEventTracker = AnalyticsEventTracker('Header Links');
+    const [ShowMenu, setShowMenu] = useState(-1);   
+    const ga_onClick = (event, category, label) => {
+        window.gtag("event", event, {
+          event_category: category,
+          event_label: label
+        });
+    } 
     const handleShowToggle = (div) => {
         if (ShowMenu === -1) {
             $('.Hamb').css('background-color', "rgb(182, 179, 179)");
@@ -25,16 +29,16 @@ function Header() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" aria-current="page" href="/" onClick ={ga_onClick("home", "header", "home_link")}>Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="/#location">Location</a>
+                                <a className="nav-link" href="/#location" onClick ={ga_onClick("location", "header", "location_link")} >Location</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="/#contact">Schedule Service</a>
+                                <a className="nav-link" href="/#contact" onClick ={ga_onClick("schedule", "header", "schedule_link")}>Schedule Service</a>
                             </li>
                             <li className="nav-item">                           
-                                <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
+                                <Link className="nav-link" to='/AboutUs' onClick ={ga_onClick("about", "header", "about_link")}>
                                     <span>About Us</span>
                                 </Link> 
                             </li>
@@ -53,10 +57,10 @@ function Header() {
             <div className="collapseAll">
                 {ShowMenu === 1 && (
                     <div className="collapseMenu">
-                          <a className="nav-link active" onClick={()=>gaEventTracker('home_link')} aria-current="page" href="/">Home</a>                                 
-                          <a className="nav-link" onClick={()=>gaEventTracker('location_link')} href="/#location">Location</a>
-                          <a className="nav-link" onClick={()=>gaEventTracker('schedule_link')} href="/#contact">Schedule Service</a>
-                          <Link className="nav-link" onClick={()=>gaEventTracker('about_link')} to='/AboutUs'>
+                          <a className="nav-link active" aria-current="page" href="/" onClick ={ga_onClick("home", "header_mobile", "home_link")}>Home</a>                                 
+                          <a className="nav-link" href="/#location" onClick ={ga_onClick("location", "header_mobile", "location_link")} >Location</a>
+                          <a className="nav-link" href="/#contact" onClick ={ga_onClick("schedule", "header_mobile", "schedule_link")}>Schedule Service</a>
+                          <Link className="nav-link" to='/AboutUs' onClick ={ga_onClick("about", "header_mobile", "about_link")}>
                                     <span>About Us</span>
                            </Link> 
                     </div>
