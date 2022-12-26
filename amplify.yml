@@ -6,8 +6,8 @@ frontend:
         - npm ci
     build:
       commands:
-        - REACT_APP_GOOGLE_MAP_API_KEY=${GOOGLE_API_KEY}        
-        - npm run build      
+        - REACT_APP_GOOGLE_MAP_API_KEY=${REACT_APP_GOOGLE_MAP_API_KEY}  
+        - npm run build:$REACT_APP_GOOGLE_MAP_API_KEY 
   artifacts:
     baseDirectory: build
     files:
