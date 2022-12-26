@@ -16,7 +16,7 @@ export default function HomePage() {
     lng: -81.4379945,
     address: '9713 Ravenna Road, Twinsburgh, Ohio 44087',
   };
-  const TRACKING_ID = "'UA-3850337-1";
+  const TRACKING_ID = "G-06KGKFJZ50";
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
   const gaEventTracker = AnalyticsEventTracker('Home Page');
