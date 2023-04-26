@@ -42,7 +42,9 @@ export default function HomePage() {
       <header className="masthead">
             <div className="container">               
               <img className="logoWorld" src={LogoWorld} alt="Mondo Car Repair Logo" />    
-                <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                {/* <div className="masthead-heading text-uppercase">Nice to Meet you.</div> */}
+                <div className="masthead-heading  text-uppercase">We're moving!</div>
+                <div className="masthead-subheading"> On May 2023, new location is 9347 Ravenna Rd Twinsburg Ohio.. Come and visit us there!</div>
                 <a className="btn btn-primary btn-xl text-uppercase mx-3" href="tel:13304050555" onClick ={ga_onClick("call", "button", "call_button")}>Call us Today</a>
                 <a className="btn btn-success btn-xl text-uppercase" href="#contact" onClick ={ga_onClick("schedule", "button", "schedule_button")}>Schedule Service</a>               
                 <div><span> or dial +1 (330) 405-0555</span></div>
