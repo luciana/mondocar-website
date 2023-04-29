@@ -1,6 +1,6 @@
 # Mondo Car Repair site ( React.JS)
 
-This is the repo for Mondo Car Repair website. This is a mechanic shop in Twinsburgh, Ohio that offers quality auto service for foreign and domestic vehicles. 
+This is the repo for Mondo Car Repair website. This is a mechanic shop in Twinsburg, Ohio that offers quality auto service for foreign and domestic vehicles. 
 
 ## Environment
 
