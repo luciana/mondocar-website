@@ -67,16 +67,7 @@ export default function HomePage() {
           <Map location={location} />
         </div>
         <Schedule /> 
-        <div className="page-section bg-light" id="testimonial">
-            <div className="container">
-                <div className="text-center">                    
-                    <h2 className="section-subheading text-muted">Our customers are satisfied</h2>
-                </div>
-                <div className="row">                                    
-                  <Reviews />  
-                </div>
-            </div>
-        </div>
+        
         <div>
           <div className="  footerBase">
             <span> Call us on Phone: <a href="tel: (330) 405-0555">(330) 405-0555</a> </span>
