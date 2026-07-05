@@ -42,6 +42,11 @@ function Header() {
                                     <span>About Us</span>
                                 </Link> 
                             </li>
+                            <li className="nav-item">                           
+                                <Link className="nav-link" to='/Hiring' onClick ={ga_onClick("hiring", "header", "hiring_link")}>
+                                    <span>Now Hiring</span>
+                                </Link> 
+                            </li>
                         </ul>
                     </div>
                     <div className="collapseAll">
@@ -62,6 +67,9 @@ function Header() {
                           <a className="nav-link" href="/#contact" onClick ={ga_onClick("schedule", "header_mobile", "schedule_link")}>Schedule Service</a>
                           <Link className="nav-link" to='/AboutUs' onClick ={ga_onClick("about", "header_mobile", "about_link")}>
                                     <span>About Us</span>
+                           </Link>
+                          <Link className="nav-link" to='/Hiring' onClick ={ga_onClick("hiring", "header_mobile", "hiring_link")}>
+                                    <span>Now Hiring</span>
                            </Link> 
                     </div>
                 )}
