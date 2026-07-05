@@ -11989,3 +11989,117 @@ section#contact form#contactForm :-ms-input-placeholder {
 .schedule-iframe{
   width:100%;height:1000px;border:0px;background-color:transparent;
 }
+.hiring-page {
+  color: #212529;
+}
+
+.hiring-hero {
+  background: linear-gradient(rgba(20, 30, 38, 0.78), rgba(20, 30, 38, 0.78)), url("../assets/images/new_building.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 7rem 0 5rem;
+  text-align: center;
+}
+
+.hiring-hero h1 {
+  font-size: clamp(2.25rem, 6vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 auto 1rem;
+  max-width: 980px;
+  text-transform: uppercase;
+}
+
+.hiring-eyebrow {
+  color: #ffc800;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hiring-lead {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  margin: 0 auto;
+  max-width: 820px;
+}
+
+.hiring-content {
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.hiring-intro-card,
+.hiring-section-card,
+.hiring-contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.hiring-intro-card p,
+.hiring-note p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.hiring-section-card h2,
+.hiring-contact-card h2 {
+  color: #1f3c4a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hiring-section-card ul {
+  margin-bottom: 0;
+  padding-left: 1.4rem;
+}
+
+.hiring-section-card li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.45rem;
+}
+
+.hiring-contact-card {
+  background: #1f3c4a;
+  color: #fff;
+  text-align: center;
+}
+
+.hiring-contact-card h2 {
+  color: #ffc800;
+}
+
+.hiring-contact-card address {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hiring-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hiring-hero {
+    padding: 5rem 1rem 4rem;
+  }
+
+  .hiring-content {
+    padding-top: 2rem;
+  }
+
+  .hiring-intro-card,
+  .hiring-section-card,
+  .hiring-contact-card {
+    padding: 1.5rem;
+  }
+}

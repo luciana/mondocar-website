@@ -6,6 +6,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './Pages/HomePage';
 import AboutUs from './Pages/AboutusPage';
+import HiringPage from './Pages/HiringPage';
 import './Pages/pages.css'
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/" exact element={<HomePage />} />
-          <Route path="/AboutUs" exact element={<AboutUs />} />         
+          <Route path="/AboutUs" exact element={<AboutUs />} />
+          <Route path="/Hiring" exact element={<HiringPage />} />         
         </Routes>
       </div>
     </Router>
